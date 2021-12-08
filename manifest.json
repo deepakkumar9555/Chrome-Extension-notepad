@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome Notepad",
+  "description": "A simple notepad with bold, italic and underline to be used as a Chrome extension.Made by~Deepak",
+  "version": "0.0.1",
+  "author": "Deepak Kumar",
+  "icons": {
+    "128": "notepadicon128.png",
+    "48": "notepadicon48.png",
+    "16": "notepadicon16.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Chrome Notepad",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "notepadicon128.png",
+      "48": "notepadicon48.png",
+      "16": "notepadicon16.png"
+    }
+  },
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "storage"
+  ]
+}
